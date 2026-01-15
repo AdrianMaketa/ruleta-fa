@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruleta de Casino Dinámica</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Ruleta -->
+      <div class="roulette-container">
+        <img
+          src="https://www.fahorro.com/media/logo/stores/4/logo.png"
+          alt=""
+          class="roulette-logo"
+        />
+        <h1 class="roulette-title">Ruleta de la suerte</h1>
+
+        <div class="roulette-wheel-container">
+          <div class="roulette-wheel" id="roulette-wheel">
+            <!-- Los segmentos se generarán dinámicamente aquí -->
+          </div>
+
+          <div class="pointer"></div>
+
+          <button class="spin-button" id="spin-btn" disabled>
+            <img
+              src="img/fahorro-a.png"
+              alt="Girar"
+              style="width: 80%; border-radius: 100%"
+            />
+          </button>
+
+          <div class="center-circle"></div>
+        </div>
+
+        <!-- Resultado se mostrará en un modal -->
+
+        <div class="instructions">
+          <p>
+            <strong>Instrucciones:</strong> La ruleta tiene 8 premios . Haz clic
+            en el botón "Ahorro" para seleccionar un premio aleatoriamente.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Resultado -->
+    <div class="modal-overlay" id="result-modal" aria-hidden="true">
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="result-title"
+      >
+        <h2 class="modal-title" id="result-title">¡Haz ganado!</h2>
+        <div class="modal-result" id="result-value">
+          Pulsa "Girar" para comenzar
+        </div>
+        <button class="modal-close" id="close-modal">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
