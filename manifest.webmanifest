@@ -1,0 +1,13 @@
+{
+  "name": "Ruleta",
+  "short_name": "Ruleta",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d30e29",
+  "icons": [
+    { "src": "img/fahorro-a.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "img/fahorro-a.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
